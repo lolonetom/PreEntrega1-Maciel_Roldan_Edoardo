@@ -1,0 +1,18 @@
+.icon-cart {
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+}
+
+.icon-display {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    font-size: 12px;
+    position: absolute;
+    text-align: center;
+    line-height: 17px;
+}
