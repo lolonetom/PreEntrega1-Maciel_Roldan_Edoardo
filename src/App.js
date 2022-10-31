@@ -9,7 +9,7 @@ export default function App() {
     <>
     <Navbar />
     <ItemListContainer greeting={"Bienvenido a tu tienda"}/>
-    <ItemCount />
+    <ItemCount stock={10} />
     <Footer/>
     </>
   );

@@ -4,8 +4,8 @@ import { useState } from 'react'
 
 export default function ItemCount() {
 
-    const[contar, setCont] = useState(1);
-    const decreser =() =>{
+    const[contar, setCont,] = useState(0);
+    const decrecer =() =>{
         setCont(contar - 1);
     }
 
@@ -16,9 +16,9 @@ return (
     <>
     <div>
         <ButtonGroup variant="contained" arial-label="outlined primary buttom group">
-            <Button onClick={decreser}>-</Button>
-            <TextField id="outlined-basic" label="Cantidad" variant="outlined"><span> {contar} </span></TextField>
-            <Button onClick={incrementar}>+</Button>
+            <Button disabled={contar <= 0} onClick={decrecer}>-</Button>
+            <TextField id="outlined-number" label="Cantidad" value={contar} variant="outlined"></TextField>
+            <Button disabled={contar >= stock} onClick={incrementar}>+</Button>
         </ButtonGroup>
         <Button>Agregar al carrito</Button>
     </div>
